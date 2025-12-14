@@ -1,215 +1,212 @@
-# İş Kamera Uygulaması
+# IsKa - İş Kamera Uygulaması 📸
 
-İş yerinde çekilen fotoğrafları düzenli bir şekilde yönetmek için geliştirilmiş bir Flutter mobil uygulamasıdır.
+<p align="center">
+  <img src="assets/images/logo.png" width="150" alt="IsKa Logo">
+</p>
 
-## 🎯 Özellikler
+<p align="center">
+  <strong>İş yerinde çekilen fotoğraf ve videoları düzenli bir şekilde yönetmek için geliştirilmiş Flutter mobil uygulaması</strong>
+</p>
 
-### Kullanıcı Yönetimi
-- ✅ Kullanıcı kayıt ve giriş sistemi
-- ✅ Güvenli oturum yönetimi (SharedPreferences)
-- ✅ Otomatik giriş yapma
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.0+-blue?logo=flutter" alt="Flutter">
+  <img src="https://img.shields.io/badge/Dart-3.0+-blue?logo=dart" alt="Dart">
+  <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green" alt="Platform">
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
+</p>
 
-### Fotoğraf Çekimi
-- 📷 Yerleşik kamera desteği
-- 🔄 Ön/Arka kamera değiştirme
-- 📸 Yüksek kaliteli fotoğraf çekimi
-- 💾 Otomatik kaydetme
+---
 
-### Albüm Yönetimi
-- 📁 Manuel albüm oluşturma
-- 📅 Otomatik günlük albüm oluşturma (tarih bazlı)
-- 🗑️ Albüm silme özelliği
-- 🏷️ Albüm türü gösterimi (Otomatik/Manuel)
+## 📱 Ekran Görüntüleri
 
-### Fotoğraf Detayları
-- 👤 Fotoğrafı çeken kişinin adı
-- 📅 Çekim tarihi
-- ⏰ Çekim saati
-- 🔍 Tam ekran görüntüleme
-- 🔎 Zoom (pinch to zoom) özelliği
-- ➡️ Sağa/Sola kaydırarak fotoğraflar arası geçiş
+| Giriş | Ana Sayfa | Kamera | Albüm Detay |
+|:---:|:---:|:---:|:---:|
+| Login | Albums | Camera | Photos |
 
-### Galeri Görünümü
-- 📱 Grid layout ile albüm görüntüleme
-- 🖼️ Grid layout ile fotoğraf görüntüleme
-- 🗑️ Fotoğraf silme (uzun basma)
-- 🔄 Yenileme (pull to refresh)
+---
+
+## ✨ Özellikler
+
+### 👤 Kullanıcı Yönetimi
+- Kullanıcı kayıt ve giriş sistemi
+- "Beni Hatırla" özelliği
+- Güvenli oturum yönetimi
+
+### 📷 Fotoğraf & Video
+- Yüksek kaliteli fotoğraf çekimi
+- Video kayıt desteği
+- Ön/Arka kamera değiştirme
+- Gerçek zamanlı önizleme
+
+### 📁 Albüm Yönetimi
+- Manuel albüm oluşturma
+- Albüm bazlı otomatik silme ayarları
+- Esnek silme süreleri (12 saat - 1 yıl)
+- Albümle birlikte silme seçeneği
+
+### ⭐ Galeri Özellikleri
+- Grid görünümde fotoğraflar
+- Tam ekran görüntüleme
+- Pinch to zoom
+- Kaydırarak fotoğraflar arası geçiş
+- Favori işaretleme
+- Video oynatma
+
+### 🎨 Tema Desteği
+- **Aydınlık Tema** - Parlak ve temiz görünüm
+- **Karanlık Tema** - Göz yormayan koyu tema
+- **Tokyo Night** - Şık ve modern koyu tema
+- **8 Farklı Vurgu Rengi** - Mavi, Yeşil, Mor, Turuncu, Kırmızı, Cyan, Pembe, Amber
+
+### ⏰ Otomatik Silme
+- Albüm bazlı otomatik silme
+- Esnek süre seçenekleri:
+  - 12 Saat
+  - 1 Gün
+  - 3 Gün
+  - 1 Hafta
+  - 1 Ay
+  - 3 Ay
+  - 1 Yıl
+  - Asla Silme
+
+---
 
 ## 🛠️ Teknolojiler
 
-- **Flutter**: Mobil uygulama framework'ü
-- **SQLite**: Yerel veritabanı (sqflite)
-- **Camera Plugin**: Kamera işlemleri
-- **SharedPreferences**: Oturum yönetimi
-- **Path Provider**: Dosya yolu yönetimi
-- **Intl**: Tarih/saat formatlama
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| **Flutter** | Cross-platform mobil uygulama |
+| **SQLite (sqflite)** | Yerel veritabanı |
+| **Camera Plugin** | Fotoğraf ve video çekimi |
+| **Video Player** | Video oynatma |
+| **SharedPreferences** | Ayarlar ve oturum yönetimi |
+| **Path Provider** | Dosya sistemi yönetimi |
+| **Permission Handler** | İzin yönetimi |
+| **Intl** | Tarih/saat formatlama |
+
+---
 
 ## 📦 Kurulum
 
 ### Gereksinimler
-- Flutter SDK (3.9.2 veya üzeri)
-- Dart SDK
+- Flutter SDK 3.0+
+- Dart SDK 3.0+
 - Android Studio / VS Code
-- iOS için: Xcode (macOS)
-- Android için: Android SDK
+- Android SDK (Android için)
+- Xcode (iOS için - sadece macOS)
 
 ### Adımlar
 
-1. **Projeyi klonlayın**
 ```bash
-cd work_camera_app
-```
+# 1. Projeyi klonlayın
+git clone https://github.com/MehmetMirzaDogan/IsKa.git
+cd IsKa
 
-2. **Bağımlılıkları yükleyin**
-```bash
+# 2. Bağımlılıkları yükleyin
 flutter pub get
-```
 
-3. **Uygulamayı çalıştırın**
-```bash
-# Android
+# 3. Uygulamayı çalıştırın
 flutter run
-
-# iOS
-flutter run -d ios
 ```
 
-## 📱 Kullanım
+### APK Oluşturma
 
-### İlk Kullanım
+```bash
+flutter build apk --release
+```
 
-1. **Kayıt Ol**: Uygulamayı ilk açtığınızda kayıt olun
-   - Ad Soyad
-   - Kullanıcı Adı (en az 3 karakter)
-   - Şifre (en az 6 karakter)
+APK dosyası: `build/app/outputs/flutter-apk/app-release.apk`
 
-2. **Giriş Yap**: Mevcut hesabınızla giriş yapın
-
-### Fotoğraf Çekme
-
-1. Ana ekrandaki **"Fotoğraf Çek"** butonuna basın
-2. Albüm seçin veya günlük albüm kullanın
-3. Kamera açılacak, beyaz butona basarak fotoğraf çekin
-4. Fotoğraf otomatik olarak seçili albüme kaydedilecek
-
-### Albüm Oluşturma
-
-1. Ana ekrandaki **"+"** (klasör) butonuna basın
-2. Albüm adı girin (örn: "Proje A", "Site İnşaatı")
-3. **"Oluştur"** butonuna basın
-
-### Fotoğrafları Görüntüleme
-
-1. Ana ekrandan bir albüme tıklayın
-2. Fotoğraf listesi görüntülenir
-3. Bir fotoğrafa tıklayarak detayları görüntüleyin
-   - Çeken kişi
-   - Tarih
-   - Saat
-4. Fotoğraflar arası geçiş için sağa/sola kaydırın
-
-### Silme İşlemleri
-
-- **Albüm Silme**: Albüm kartındaki çöp kutusu ikonuna basın
-- **Fotoğraf Silme**: Fotoğraf üzerine uzun basın
+---
 
 ## 🏗️ Proje Yapısı
 
 ```
 lib/
-├── models/              # Veri modelleri
-│   ├── user.dart       # Kullanıcı modeli
-│   ├── album.dart      # Albüm modeli
-│   └── photo.dart      # Fotoğraf modeli
-│
-├── services/            # İş mantığı katmanı
-│   ├── database_service.dart    # SQLite işlemleri
-│   ├── auth_service.dart        # Kimlik doğrulama
-│   ├── album_service.dart       # Albüm işlemleri
-│   └── camera_service.dart      # Kamera işlemleri
-│
-├── screens/             # Ekranlar
-│   ├── login_screen.dart            # Giriş ekranı
-│   ├── register_screen.dart         # Kayıt ekranı
-│   ├── home_screen.dart             # Ana ekran (Albümler)
-│   ├── camera_screen.dart           # Kamera ekranı
-│   ├── album_detail_screen.dart     # Albüm detay
-│   └── photo_detail_screen.dart     # Fotoğraf detay
-│
-└── main.dart            # Uygulama giriş noktası
+├── main.dart                 # Uygulama giriş noktası
+├── models/                   # Veri modelleri
+│   ├── user.dart            # Kullanıcı modeli
+│   ├── album.dart           # Albüm modeli
+│   └── photo.dart           # Fotoğraf/Video modeli
+├── screens/                  # Ekranlar
+│   ├── splash_screen.dart   # Açılış ekranı
+│   ├── login_screen.dart    # Giriş ekranı
+│   ├── register_screen.dart # Kayıt ekranı
+│   ├── home_screen.dart     # Ana ekran
+│   ├── camera_screen.dart   # Kamera ekranı
+│   ├── album_detail_screen.dart   # Albüm detay
+│   ├── photo_detail_screen.dart   # Fotoğraf detay
+│   └── settings_screen.dart # Ayarlar ekranı
+└── services/                 # Servisler
+    ├── auth_service.dart    # Kimlik doğrulama
+    ├── album_service.dart   # Albüm işlemleri
+    ├── camera_service.dart  # Kamera işlemleri
+    ├── database_service.dart # Veritabanı işlemleri
+    └── theme_service.dart   # Tema yönetimi
 ```
 
-## 🔐 Güvenlik Notu
+---
 
-⚠️ **ÖNEMLİ**: Bu uygulama demo amaçlıdır. Üretim ortamında kullanmadan önce:
-- Şifreleri hash'leyin (bcrypt, argon2, vb.)
-- HTTPS kullanın
-- Daha güvenli bir kimlik doğrulama sistemi ekleyin
-- Token tabanlı kimlik doğrulama kullanın
+## 📱 Kullanım
 
-## 📝 Veritabanı Şeması
+### 1. Kayıt & Giriş
+- Uygulamayı açın ve kayıt olun
+- "Beni Hatırla" ile otomatik giriş yapın
 
-### Users Tablosu
-```sql
-- id: INTEGER PRIMARY KEY
-- username: TEXT (UNIQUE)
-- password: TEXT
-- name: TEXT
-- created_at: TEXT
-```
+### 2. Albüm Oluşturma
+- Ana ekranda 📁 butonuna tıklayın
+- Albüm adı ve silme ayarlarını belirleyin
 
-### Albums Tablosu
-```sql
-- id: INTEGER PRIMARY KEY
-- name: TEXT
-- user_id: INTEGER (Foreign Key)
-- created_at: TEXT
-- is_auto_generated: INTEGER (0/1)
-```
+### 3. Fotoğraf/Video Çekme
+- "Fotoğraf Çek" butonuna tıklayın
+- Albüm seçin
+- Fotoğraf veya video modu seçin
+- Çekim yapın
 
-### Photos Tablosu
-```sql
-- id: INTEGER PRIMARY KEY
-- path: TEXT
-- album_id: INTEGER (Foreign Key)
-- user_id: INTEGER (Foreign Key)
-- taken_at: TEXT
-- taken_by: TEXT
-```
+### 4. Görüntüleme
+- Albüme tıklayarak fotoğrafları görüntüleyin
+- Detay ekranında zoom yapın
+- Kaydırarak gezinin
 
-## 🎨 Özellikler
+---
 
-### Otomatik Albüm Oluşturma
-- Eğer kullanıcı fotoğraf çekmeden önce albüm seçmezse
-- O günün tarihi ile otomatik albüm oluşturulur (örn: "18.11.2025")
-- Aynı gün içinde çekilen tüm fotoğraflar bu albüme eklenir
+## 🔐 İzinler
 
-### Kullanıcı Deneyimi
-- Modern ve sezgisel arayüz
-- Material Design 3
-- Gradient renkler
-- Animasyonlu geçişler
-- Loading göstergeleri
-- Hata mesajları
+Uygulama aşağıdaki izinleri kullanır:
 
-## 🚀 Gelecek Özellikler (Planlanan)
+| İzin | Neden Gerekli |
+|------|---------------|
+| Kamera | Fotoğraf ve video çekimi |
+| Mikrofon | Video kaydı için ses |
+| Depolama | Medya dosyalarını kaydetme |
 
-- [ ] Cloud backup
-- [ ] Fotoğraf paylaşma
-- [ ] Fotoğraf düzenleme
-- [ ] Arama ve filtreleme
-- [ ] Çoklu dil desteği
-- [ ] Dark mode
-- [ ] Export/Import özelliği
-
-## 📄 Lisans
-
-Bu proje eğitim amaçlıdır.
+---
 
 ## 🤝 Katkıda Bulunma
 
-Katkılarınızı bekliyoruz! Lütfen bir issue açın veya pull request gönderin.
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Commit yapın (`git commit -m 'Add amazing feature'`)
+4. Push yapın (`git push origin feature/amazing-feature`)
+5. Pull Request açın
 
-## 📞 İletişim
+---
 
-Sorularınız için lütfen bir issue açın.
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.
+
+---
+
+## 👨‍💻 Geliştirici
+
+**Mehmet Mirza Doğan**
+
+- GitHub: [@MehmetMirzaDogan](https://github.com/MehmetMirzaDogan)
+
+---
+
+<p align="center">
+  ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+</p>
