@@ -12,7 +12,6 @@
   <img src="https://img.shields.io/badge/Flutter-3.0+-blue?logo=flutter" alt="Flutter">
   <img src="https://img.shields.io/badge/Dart-3.0+-blue?logo=dart" alt="Dart">
   <img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-green" alt="Platform">
-  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
 </p>
 
 ---
