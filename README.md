@@ -1,4 +1,4 @@
-# IsKa - İş Kamera Uygulaması 📸
+# IsKa - İş Kamera Uygulaması
 
 <p align="center">
   <img src="assets/images/logo.png" width="150" alt="IsKa Logo">
@@ -136,20 +136,8 @@ Uygulama aşağıdaki izinleri kullanır:
 
 ---
 
-## 📄 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
-
----
-
 ## 👨‍💻 Geliştirici
 
 **Mehmet Mirza Doğan**
 
 - GitHub: [@MehmetMirzaDogan](https://github.com/MehmetMirzaDogan)
-
----
-
-<p align="center">
-  ⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
-</p>
