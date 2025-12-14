@@ -25,7 +25,7 @@
 
 ---
 
-## ✨ Özellikler
+##  Özellikler
 
 ### 👤 Kullanıcı Yönetimi
 - Kullanıcı kayıt ve giriş sistemi
