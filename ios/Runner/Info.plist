@@ -47,7 +47,11 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>İş fotoğraflarınızı çekebilmek için kamera erişimine ihtiyacımız var.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Video kaydı için mikrofon erişimine ihtiyacımız var.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Çektiğiniz fotoğrafları kaydetmek için fotoğraf galerisine erişime ihtiyacımız var.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Çektiğiniz fotoğrafları kaydetmek için fotoğraf galerisine erişime ihtiyacımız var.</string>
 </dict>
 </plist>
